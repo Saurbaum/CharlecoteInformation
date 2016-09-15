@@ -24,5 +24,17 @@ namespace CharlecoteInformation
 		{
 			InitializeComponent();
 		}
+
+		private void Exit_Click(object sender, RoutedEventArgs e)
+		{
+			this.Close();
+		}
+
+		private void WebBrowser_Click(object sender, RoutedEventArgs e)
+		{
+			var webWindow = new WebWindow();
+
+			webWindow.Show();
+		}
 	}
 }
