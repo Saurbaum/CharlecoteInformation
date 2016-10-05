@@ -9,7 +9,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        WindowState="Maximized">
+        WindowState="Maximized"
+        Topmost="True">
     <Window.Resources>
         <Style TargetType="{x:Type Button}">
             <Setter Property="Background" Value="Green"/>
@@ -33,6 +34,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="30"/>
@@ -44,8 +46,8 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="4" Source="Hall_doorstop_large.jpg"/>
-        <Button Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Background="DarkRed" Foreground="AntiqueWhite" FontSize="32" Click="InfoButton_Click">
+        <Image Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="6" Source="Hall_doorstop_large.jpg"/>
+        <Button Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Background="DarkRed" Foreground="AntiqueWhite" FontSize="32" Click="InfoButton_Click">
             <TextBlock HorizontalAlignment="Center">Press Here</TextBlock>
         </Button>
         <Button Grid.Column="4" Grid.Row="0" Content="X" BorderBrush="Transparent" Background="Transparent" Foreground="DarkRed" FontSize="16" Click="Exit_Click"/>

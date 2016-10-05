@@ -10,8 +10,7 @@ namespace CharlecoteInformation
 	/// </summary>
 	public partial class InfoWindow
 	{
-		private string homePage = "C:\\users\\music\\OneDrive\\Acer-charlecote\\index.htm";
-		//private string homePage = "http://musicweb-international.com/charlecote/index.htm";
+		private readonly string homePage = "http://localhost/index.htm";
 
 		public InfoWindow()
 		{
